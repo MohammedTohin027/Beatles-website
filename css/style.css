@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500;600;700;800;900&display=swap');
+
+:root {
+    --white: #fff;
+    --blue: #0872b9;
+    --green: #27ae60;
+    --black: #161616;
+    --dark: #353535;
+    --light-color: #666;
+    --gray: #f1f1f1;
+    --btn-color: #DD0000;
+    --box-shadow: 0 .5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    color: white;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: var(--white);
+    background: var(--btn-color);
+    padding: 0.8rem 2.5rem;
+    border-radius: 2px;
+    margin: 1rem 0;
+}
+
+.section-title p,
+.service-title p {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-top: 6rem;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.section-title {
+    position: relative;
+}
+
+.bar {
+    width: 10rem;
+    height: 2px;
+    background: var(--blue);
+    margin: 0 auto;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100vw;
+    margin: 0 auto;
+    background-color: var(--blue);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Top Section Start */
+.header-top {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.logo-title {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.icons i {
+    padding-left: 3rem;
+}
+
+.icons i:hover {
+    color: var(--dark);
+}
+
+.bar-icon{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--dark);
+    display: none;
+}
+/* Header Top Section End */
+
+/* main header section start  */
+.main-header {
+    width: 100%;
+    height: 10rem;      
+}
+
+.position-striky{
+    position: sticky;
+    top: 0;  
+    background: white;
+    z-index: 10;
+    box-shadow: 0px 5px 5px #cecece;
+}
+
+.navbar a {
+    color: var(--dark);
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar a:hover {
+    color: var(--blue);
+}
+/* main header section end  */
+
+/* banner section end  */
+.banner {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.banner:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+}
+
+.banner:hover:before {
+    opacity: 0;
+}
+
+.banner-content:hover {
+    color: var(--light-color);
+}
+
+.banner-content {
+    transform: translate(0%, 30%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+    width: 100%;
+    color: var(--white);
+    transition: all 0.8s ease-in-out;
+}
+
+.banner-sub-title {
+    font-size: 5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 100vw;
+    text-align: right;
+}
+
+.banner-title {
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-align: right;
+    width: 100vw;
+}
+
+.banner-description {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 50%;
+    line-height: 2.5rem;
+    text-align: right;
+    padding: 2rem 0;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+}
+
+.btn-transparent {
+    margin-left: 2rem;
+    background: transparent;
+    color: var(--light-color);
+    border: 2px solid var(--white);
+}
+
+/* banner section end  */
+
+/* About section Start  */
+.about-content {
+    background: var(--gray);
+}
+
+.about-content img {
+    width: 100%;
+    height: 37rem;
+    margin-right: 1rem;
+    background: var(--white);
+}
+
+.about-content p {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--light-color);
+    line-height: 3rem;
+    font-family: 'Nunito', sans-serif !important;
+    padding-left: 1rem;
+}
+
+/* About section  end  */
+
+/* Service section Start  */
+.service-title {
+    margin-bottom: 85px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 23px;
+    margin-top: 90px;
+}
+
+.service-item {
+    height: 250px;
+    background: var(--gray);
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+/* .service-item:hover {
+    border: 1px solid #d2d2d2;
+} */
+
+.service-item-image {
+    margin: 0 auto;
+    position: relative;
+    width: 0;
+}
+
+.logo-position {
+    position: absolute;
+    top: -70px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #d2d2d2;
+    border-radius: 50%;
+    background: var(--gray);
+}
+
+.service-item img {
+    width: 60px;
+    transform: translate(5%, 25%);
+}
+
+.service-item h1 {
+    font-size: 2.5rem;
+    color: var(--dark);
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.5rem;
+    padding-top: 40px;
+}
+
+.service-item p {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--light-color);
+    line-height: 2.8rem;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+/* Service section  end  */
+
+/* Portfolio section  Start  */
+.portfolio-content,
+.team-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.portfolio-content .item img {
+    width: 100%;
+    height: 25rem;
+}
+
+.portfolio-item{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-item .overlay {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;    
+    transition: 0.8s ease-in-out;
+}
+.portfolio-item .content{
+    content: '';
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translate(45%, 40%);
+    transition: 0.8s ease-in-out;
+}
+.portfolio-item:hover .overlay,
+.portfolio-item:hover .content {
+    opacity: 1;
+}
+
+.portfolio-item .content i {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    padding: 14px;
+    border-radius: 100%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid white;
+    transition: all 0.8s ease-in-out;
+}
+.portfolio-item .content i:hover{
+    background: #5bc5f4;
+    border: none;
+}
+/* Portfolio section  end  */
+
+/* Our Team Section Start  */
+.team-item {
+    text-align: center;
+}
+.team-item:hover .team-info .name{
+    color: #5bc5f4;
+}
+
+.team-image {
+    position: relative;
+}
+
+.team-image .overlay {
+    content: '';
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+.team-image .content{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0, 10%);
+    cursor: pointer;
+}
+.team-image .content i{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 100%;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: all 0.8s ease-in-out;
+}
+.team-image .content i:hover{
+    background: #5bc5f4;
+    border: none;
+}
+.team-image:hover .overlay{
+    opacity: 1;
+}
+.team-image:hover .content{
+    opacity: 1;
+}
+
+
+
+.team-image img {
+    width: 100%;
+    height: 35rem;
+    background: var(--gray);
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+/* .team-image:hover{
+    border: 1px solid #d2d2d2;
+} */
+
+.team-info .name {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-top: 1.2rem !important;
+}
+
+.team-content .designation {
+    font-size: 1.8rem !important;
+    font-weight: 700;
+    color: var(--light-color);
+    text-transform: capitalize !important;
+}
+
+/* Our Team Section End  */
+
+/* Testimonial Section Start */
+.testimonial-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.testimonial-item {
+    text-align: center;
+}
+
+.testimonial-logo {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background: var(--gray);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-item img {
+    width: 434px;
+    height: 280px;
+    margin: 0 auto;
+    position: absolute;
+    right: -145%;
+    top: 6px;
+}
+
+.testimonial-item .team-info {
+    background: var(--gray);
+    position: relative;
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+.team-shape {
+    width: 35px;
+    height: 35px;
+    rotate: 45deg;
+    background: var(--gray);
+    margin: 0 auto;
+    position: absolute;
+    top: -16px;
+    left: 47%;
+}
+
+.team-info .name {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.team-info .icons {
+    color: #5bc5f4;
+    margin-bottom: 1rem;
+}
+
+.team-info .icons i {
+    padding-left: 0.3rem;
+    font-size: 1.8rem;
+}
+
+.team-info .designation {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--light-color);
+    text-transform: capitalize;
+}
+
+.team-info .description {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+/* Testimonial Section End */
+
+/* Footer Section Start */
+.footer {
+    color: var(--white);
+    margin-top: 7rem;
+    background: var(--dark);
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer .company-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.footer .menu-portfolio {
+    display: grid;
+    grid-template-columns: 6fr 9fr;
+    grid-gap: 15px;
+}
+
+.logo-description img {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.logo-description p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 2.5rem;
+    color: var(--gray);
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.footer-item-title {
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.contact-item-content {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.contact-item-content .icon {
+    margin-right: 1.3rem;
+}
+
+.contact-item-content .icon i {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #5bc5f4;
+    color: var(--white);
+    padding-top: 1.3rem;
+    font-size: 2rem;
+}
+
+.contact-item-content .contact-info p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-transform: lowercase;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.nav-link {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link a {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 1.5rem;
+    color: var(--gray);
+    font-weight: 600;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.nav-link a:hover {
+    color: var(--blue);
+}
+
+.footer-portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer-portfolio-item {
+    width: 8rem;
+    height: 8rem;
+    flex-grow: 1;
+}
+
+.footer-portfolio-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Section End */

@@ -1,0 +1,132 @@
+@media screen and (max-width: 1023px) {    
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .portfolio-title p {
+        margin-top: 0px !important;
+    }
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-item {
+        margin-bottom: 60px;
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 4fr 9fr;
+    }
+
+    .banner-content {
+        transform: translate(0%, 18%);
+    }
+
+    .banner-description{
+        width: 70%;
+    }
+
+    .bar-icon{
+        display: block;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        top: 100px;
+        text-align: center;
+        width: 90%;
+        z-index: 10000;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+    }
+    .navbar a{
+        display: block;    
+        color: white;  
+        margin: 18px 0; 
+    }
+    .bar-icon-active{
+        display: block;
+    }
+}
+@media screen and (max-width: 767px) {    
+    .footer-container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer .company-information {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer .menu-portfolio {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nav-link{
+        flex-direction: column;
+    }
+
+    .logo-description p{
+        text-align: center;
+    }
+
+    .contact-item-content{
+        justify-content: center;
+    }
+
+    .testimonial-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-content p {
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+
+    .banner-content {
+        transform: translate(0%, 65%);
+        align-items: center;
+    }
+
+    .banner-sub-title,
+    .banner-title {
+        text-align: center;
+    }
+
+    .banner-description {
+        display: none;
+    }
+
+    .banner-button {
+        margin: 0 auto;
+    }
+
+    .header-top{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo-title{
+        display: none;
+    }
+}
